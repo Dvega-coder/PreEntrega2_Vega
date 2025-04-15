@@ -1,60 +1,31 @@
 
 /*RESET*/
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
-
- .home-bg{
-background-color: #E6E6FB;
 }
- /*estilos de header*/
 
-header { 
-    background-color: #E6E6FB;
-    display: flex;
-    justify-content: space-between;
+
+/*estilos de header*/
+
+header {
+
     align-items: center;
-    border: 20px solid #EBEAAE
-
-}     
-         
-
-header nav ul {
-    
-    display: flex;
-    list-style: none;
-    padding-right: 35px;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-header nav ul li a { 
-
-    color:#65597F;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: "Noto Sans Gunjala Gondi", sans-serif;
-}
-
-        
-header img {
-        
-    width: 150px;
-    
-    
+    border: 10px solid #EBEAAE
 }
 
 
-/*estilos de main*/
+.home-bg {
+    background-color: #E6E6FB;
+}
 
+/*estilos de main en home*/
 
-main  {
+main {
 
-    background-color:#E6E6FB; 
-    text-align:center;
+    background-color: #E6E6FB;
+    text-align: center;
     font-family: "Noto Sans Gunjala Gondi", sans-serif;
     padding: 30px;
 }
@@ -66,8 +37,7 @@ main img {
 }
 
 
-.text-main 
-{
+.text-main {
     margin: 30px;
     color: #65597F;
 }
@@ -86,42 +56,39 @@ main .text-main .boton {
 }
 
 
-main a {
-    text-decoration: none;
-}
+
 
 
 /*estilos de main para SEDES*/
 
 main .main-sedes {
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-  
-  
+
+
 }
 
-main .text-main { 
-    
-    grid-column: span 2 
+main .text-main {
+
+    grid-column: span 2
 }
 
 main iframe {
-    
-    width:100%;
+
+    width: 100%;
     height: 100%;
 
 }
 
 .pilatessede {
-    
+
     width: 55%
-
-}               
-
+}
 
 
-main h1  {
+
+main h1 {
 
     margin: 30px;
     color: #65597F;
@@ -137,84 +104,155 @@ main h2 {
 
 /*estilos para tabla*/
 
-table{
+
+.contenedortabla {
+ 
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1f);
+    grid-template-rows: 200px 400px;
+    grid-template-areas: "head head" 
+                         "foto  texto"
+
+
+
+
+}
+
+
+
+
+table {
 
     width: 100%;
- background-color: #EBEAAE;
- border-collapse: collapse;
- margin-top: 30px;
  
-}
+    background-color: #EBEAAE;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom:30px;
 
-th,td {
-padding: 10px;
-color: #65597F;
-border: solid 2px;
-
-}
-
-
-
-
-main .textostabla{
-    
-    font-family: "Noto Sans Gunjala Gondi", sans-serif;
-    color:#65597F;
-    font-weight: bold;
-    margin-top: 30px;
-    padding: 35px;
-    text-align: justify;
-    line-height: 20px;
+ 
    
+
+    
+
+}
+
+.tabla{grid-area: head;}
+
+th,
+td {
+    padding: 5px;
+    color: #65597F;
+    border: solid 2px;
+
+}
+
+
+
+
+
+ .tablaimg {
+    width: 100%;
+    
+    grid-area: foto;
+
+ }
+
+ 
+
+
+
+main .textostabla {
+
+    font-family: "Noto Sans Gunjala Gondi", sans-serif;
+    color: #65597F;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+     grid-area: texto;
+
+    
+
+    
+
 
 }
 
 main ul {
 
-    list-style: none;
+    text-align: start;
+    
 }
 
-main ul  li {
+main ul li {
 
     color: #65597F;
 }
-    
 
 
 
+/*estilos formulario*/
+
+form {
+    background-color: #EBEAAE;
+    padding: 10px;
+    border-radius: 3px;
+    color: #65597F
+}
+
+form p {
+    margin-top: 15px;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.field {
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+
+input,
+textarea {
+
+    width: 280px;
+}
 
 
 /*estilos de section*/
 
 section {
-    
+
     display: flex;
     background-color: #EBEAAE;
     align-items: center;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    
+
 }
 
 section .imgsection img {
 
-width: 100%;
-min-width: 200px;
-padding: 25px;
+    width: 100%;
+    min-width: 200px;
+    padding: 25px;
 
 
 }
 
 
-section .textos  {
-    
-    text-align: center;
-   font-family: "Noto Sans Gunjala Gondi", sans-serif;
-    color: #65597F;
-    
+section .textos {
 
-   
+    text-align: center;
+    font-family: "Noto Sans Gunjala Gondi", sans-serif;
+    color: #65597F;
+
+
+
 }
 
 section .textos span {
@@ -227,43 +265,43 @@ section .textos span {
 
 main .contenedorfaqs {
 
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  
-    
-    
-   
+
+    display: flex;
+align-items: center;
+    flex-wrap: wrap;
+
+
+
+
 }
 
 
 main p {
 
-    color:#65597F;
+    color: #65597F;
 }
 
 
 /*estilos para footer*/
 
 footer {
-    
-  
+
+
     background-color: #E6E6FB;
-    color:#65597F;
+    color: #65597F;
     padding: 5px;
     display: flex;
     justify-content: center;
     gap: 30px;
     align-items: center;
     justify-content: center;
-   
+
 }
 
 
 footer p {
     font-size: 10px;
-    
+
 
 }
 
@@ -273,8 +311,10 @@ footer p {
 
 
 /*logo intstagram*/
-    
-.loginsta {width: 25px;}
+
+.loginsta {
+    width: 25px;
+}
 
 
 
@@ -284,40 +324,48 @@ footer p {
 /* Media query para computadoras de escritorio */
 
 @media (min-width: 1024px) {
-    
 
-body {
-       
+
+    body {
+
         margin: 0 auto;
     }
 
- 
+
 
     main .textostabla {
         padding: 80px;
-    text-align: center;
-}
-
-    
-
-    main .contenedorfaqs{
-
-        padding:60px
+        text-align: center;
     }
 
-    
- footer p
- {
-    font-size: 15px;
- }
+
+
+    main .contenedorfaqs {
+
+        
+        justify-content: center;
+    }
+
+    .formcontacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+
+    .form {
+
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+
+    }
+
+    footer p {
+        font-size: 15px;
+    }
 
 
 }
-
-
-
-
-
-
-
-
