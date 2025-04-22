@@ -1,0 +1,44 @@
+@import "../abstracts/mixin";
+
+
+main {
+
+  .formcontacto {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+
+    .imgcontacto {
+      display: none;
+    }
+
+    .center-content {
+      text-align: center;
+      padding: 5px;
+    }
+
+    .field {
+      border: solid 1px #ccc;
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+
+  input {
+    width: 300px;
+    height: 30px;
+  }
+
+  textarea {
+    width: 300px;
+    height: 30px;
+    height: 80px;
+  }
+}
+
+footer {
+
+  footer {
+    @include footer
+  }
+}

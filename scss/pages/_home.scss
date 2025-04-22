@@ -1,0 +1,54 @@
+@import "../abstracts/mixin";
+@import"../abstracts/variables";
+
+
+
+
+main {
+    background-color: $colorsecundario;
+    text-align: center;
+    padding: 10px;
+
+    img {
+        width: 100%
+    }
+
+    .text-main .boton {
+        background-color: $colorprincipal;
+        display: inline-block;
+        padding: 10px;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        margin-top: 10px;
+        font-weight: bold;
+        box-shadow: 10px 5px 8px $colortipografia;
+    }
+
+}
+
+section {
+    display: flex;
+    background-color: $colorprincipal;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    .imgsection img {
+        width: 100%;
+        display: flex;
+    }
+
+    section .textos {
+        color: $colortipografia;
+        text-align: center;
+    }
+
+    section .textos span {
+        font-weight: bold;
+    }
+
+}
+
+footer {
+    @include footer
+}

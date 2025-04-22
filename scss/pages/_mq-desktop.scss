@@ -1,0 +1,146 @@
+@import "../abstracts/mixin";
+@import"../abstracts/variables";
+
+/* Media query para computadoras de escritorio */
+
+@media screen and (min-width: 1024px) {
+
+  main {
+
+    //home
+    main img {
+      padding: 30px;
+    }
+
+    .text-main {
+      padding: 30px;
+    }
+
+    //sedes
+    .main-sedes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 80px;
+    }
+
+    .contenedor-dire {
+      grid-column: span 2;
+      border: 3px solid;
+      margin-top: 10px;
+}
+
+    .contenedor-dire p {
+      font-size: 20px;
+    }
+
+    .main-sedes .mapa {
+      width: 80%;
+      height: 100%;
+    }
+
+    .pilatessede {
+      width: 80%;
+      height: 100%;
+    }
+
+    main h2 {
+      padding: 25px;
+      font-size: 35px;
+    }
+
+    //Abonos
+
+    .contenedortabla {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "foto head"
+        "foto texto";
+      margin-top: 10px;
+      height: 550px;
+
+    }
+
+    .contenedortabla .textostabla p {
+      grid-area: texto;
+      margin: 5px;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .contenedortabla .tablaimg {
+      width: 90%;
+      grid-area: foto;
+    }
+
+    .tabla {
+      grid-area: head;
+      margin-top: 40px;
+    }
+
+    .contenedortabla .textostabla {
+      align-items: center;
+    }
+
+    //faqs
+    .contenedorfaqs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      
+    
+    }
+
+    .contenedorfaqs {
+    .preguntas1,
+    .preguntas2,
+    .preguntas3,
+    .preguntas4 {
+      @include preguntas
+      }
+  }
+
+
+  //contacto
+  .formcontacto {
+    display:grid ;
+    grid-template-columns:  1fr 1fr;
+    justify-self: center;
+   } 
+
+   .formcontacto .imgcontacto{
+    display: block;
+    width: 100%;}
+
+    .formcontacto .formulario{
+      width: 100%;
+  }
+
+ .center-content {
+      text-align: center;}
+  
+      .field {
+        border: solid 1px #ccc;
+        padding: 20px;
+    }
+    input,textarea {
+    width: 300px;
+    }
+    
+  }
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+footer{
+   p {
+    font-size: 15px;
+}
+
+}
+
+}

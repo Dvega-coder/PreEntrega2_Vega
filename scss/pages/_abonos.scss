@@ -1,0 +1,46 @@
+@import "../abstracts/mixin";
+@import"../abstracts/variables";
+
+main {
+  .contenedortabla {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 4px;
+    font-size: 16px;
+    justify-content: center;
+
+  }
+
+  .contenedortabla .tablaimg {
+    width: 100%;
+  }
+
+  .textostabla {
+    text-align: center
+  }
+
+
+  table {
+    width: 100%;
+    background-color: #EBEAAE;
+    border-collapse: collapse;
+
+    th {
+      color: $colortipografia;
+      border: solid 1px;
+    }
+
+
+    td {
+      color: #65597F;
+      border: solid 1px;
+    }
+
+  }
+
+}
+
+footer {
+  @include footer
+}

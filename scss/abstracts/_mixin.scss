@@ -1,0 +1,32 @@
+//mixin home 
+
+
+
+@mixin footer {
+    display: flex;
+    border: 1px solid #65597F;
+    background-color: #E6E6FB;
+    gap: 15px;
+    padding: 10px;
+    justify-content: center;
+
+    p {
+        font-size: 10px;
+    }
+    
+ }
+
+/*logo intstagram*/
+ .loginsta {
+    width: 14px;
+}
+
+@mixin preguntas {
+
+    border: 2px solid #65597F;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+} 
+ 
+

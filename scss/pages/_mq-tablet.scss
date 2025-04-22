@@ -1,0 +1,119 @@
+@import "../abstracts/mixin";
+@import"../abstracts/variables";
+
+/* estilos para tablet  */
+@media screen and (min-width: 600px) {
+
+  main {
+
+    //Sedes
+    .main-sedes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .contenedor-dire {
+      grid-column: span 2;
+      border: 2px solid;
+      width: 35%;
+      justify-self: center;
+
+    }
+
+    .main-sedes .mapa {
+      width: 100%;
+      height: 100%;
+    }
+
+    .pilatessede {
+      width: 60%;
+      height: 60%;
+    }
+
+    main h2 {
+
+      font-size: 35px;
+    }
+
+
+    //abono
+    .contenedortabla {
+      padding: 20px;
+      gap: 10px;
+      font-size: 16px;
+      justify-content: center;
+
+    }
+
+    table {
+      width: 100%;
+      background-color: $colorprincipal;
+      border-collapse: collapse;
+
+      th {
+        color: $colortipografia;
+        border: solid 1px;
+      }
+
+
+      td {
+        color: $colortipografia;
+        border: solid 1px;
+      }
+    }
+
+
+    .contenedortabla .tablaimg {
+      width: 90%;
+      margin-left: 35px;
+    }
+
+    .textostabla {
+      text-align: center;
+    }
+
+    //faqs
+    .contenedorfaqs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 800px;
+
+    }
+
+    .contenedorfaqs {
+
+      .preguntas1,
+      .preguntas2,
+      .preguntas3,
+      .preguntas4 {
+        @include preguntas
+      }
+
+    }
+
+    //contacto
+
+    .formcontacto {
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      height: 750px;
+
+      .imgcontacto {
+        display: block;
+        width: 60%;
+      }
+
+      .formulario {
+        width: 60%;
+      }
+    }
+  }
+
+  footer {
+    p {
+      font-size: 15px;
+    }
+  }
+}

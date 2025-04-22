@@ -1,371 +1,423 @@
-
 /*RESET*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/*estilos generales*/
+body {
+  color: #65597F;
+  font-family: "Noto Sans Gunjala Gondi", sans-serif;
+}
 
-/*estilos de header*/
-
+/*estilos de HEADER*/
 header {
-
-    align-items: center;
-    border: 10px solid #EBEAAE
+  align-items: center;
+  border: 10px solid #EBEAAE;
 }
-
 
 .home-bg {
-    background-color: #E6E6FB;
+  background-color: #E6E6FB;
 }
-
-/*estilos de main en home*/
-
-main {
-
-    background-color: #E6E6FB;
-    text-align: center;
-    font-family: "Noto Sans Gunjala Gondi", sans-serif;
-    padding: 30px;
-}
-
-
-main img {
-
-    width: 100%;
-}
-
-
-.text-main {
-    margin: 30px;
-    color: #65597F;
-}
-
-
-main .text-main .boton {
-
-    background-color: #EBEAAE;
-    display: inline-block;
-    padding: 10px;
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-    margin-top: 10px;
-    font-weight: bold;
-    box-shadow: 10px 5px 8px #65597F;
-}
-
-
-
-
-
-/*estilos de main para SEDES*/
-
-main .main-sedes {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-
-}
-
-main .text-main {
-
-    grid-column: span 2
-}
-
-main iframe {
-
-    width: 100%;
-    height: 100%;
-
-}
-
-.pilatessede {
-
-    width: 55%
-}
-
-
-
-main h1 {
-
-    margin: 30px;
-    color: #65597F;
-}
-
-main h2 {
-
-    padding: 30px;
-    color: #65597F;
-}
-
-
-
-/*estilos para tabla*/
-
-
-.contenedortabla {
- 
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2,1f);
-    grid-template-rows: 200px 400px;
-    grid-template-areas: "head head" 
-                         "foto  texto"
-
-
-
-
-}
-
-
-
-
-table {
-
-    width: 100%;
- 
-    background-color: #EBEAAE;
-    border-collapse: collapse;
-    margin: auto;
-    margin-bottom:30px;
-
- 
-   
-
-    
-
-}
-
-.tabla{grid-area: head;}
-
-th,
-td {
-    padding: 5px;
-    color: #65597F;
-    border: solid 2px;
-
-}
-
-
-
-
-
- .tablaimg {
-    width: 100%;
-    
-    grid-area: foto;
-
- }
-
- 
-
-
-
-main .textostabla {
-
-    font-family: "Noto Sans Gunjala Gondi", sans-serif;
-    color: #65597F;
-    font-weight: bold;
-    text-align: center;
-    line-height: 20px;
-     grid-area: texto;
-
-    
-
-    
-
-
-}
-
-main ul {
-
-    text-align: start;
-    
-}
-
-main ul li {
-
-    color: #65597F;
-}
-
-
-
-/*estilos formulario*/
-
-form {
-    background-color: #EBEAAE;
-    padding: 10px;
-    border-radius: 3px;
-    color: #65597F
-}
-
-form p {
-    margin-top: 15px;
-}
-
-.center-content {
-    text-align: center;
-}
-
-.field {
-    border: solid 1px #ccc;
-    padding: 10px;
-}
-
-
-input,
-textarea {
-
-    width: 280px;
-}
-
-
-/*estilos de section*/
-
-section {
-
-    display: flex;
-    background-color: #EBEAAE;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-
-}
-
-section .imgsection img {
-
-    width: 100%;
-    min-width: 200px;
-    padding: 25px;
-
-
-}
-
-
-section .textos {
-
-    text-align: center;
-    font-family: "Noto Sans Gunjala Gondi", sans-serif;
-    color: #65597F;
-
-
-
-}
-
-section .textos span {
-
-    font-weight: bold;
-
-}
-
-/*estilos para grid FAQS*/
-
-main .contenedorfaqs {
-
-
-    display: flex;
-align-items: center;
-    flex-wrap: wrap;
-
-
-
-
-}
-
-
-main p {
-
-    color: #65597F;
-}
-
-
-/*estilos para footer*/
-
-footer {
-
-
-    background-color: #E6E6FB;
-    color: #65597F;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-footer p {
-    font-size: 10px;
-
-
-}
-
-
-
-
-
 
 /*logo intstagram*/
-
 .loginsta {
-    width: 25px;
+  width: 14px;
 }
 
+main {
+  background-color: #E6E6FB;
+  text-align: center;
+  padding: 10px;
+}
+main img {
+  width: 100%;
+}
+main .text-main .boton {
+  background-color: #EBEAAE;
+  display: inline-block;
+  padding: 10px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+  box-shadow: 10px 5px 8px #65597F;
+}
 
+section {
+  display: flex;
+  background-color: #EBEAAE;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+section .imgsection img {
+  width: 100%;
+  display: flex;
+}
+section section .textos {
+  color: #65597F;
+  text-align: center;
+}
+section section .textos span {
+  font-weight: bold;
+}
 
+footer {
+  display: flex;
+  border: 1px solid #65597F;
+  background-color: #E6E6FB;
+  gap: 15px;
+  padding: 10px;
+  justify-content: center;
+}
+footer p {
+  font-size: 10px;
+}
 
+/*estilos de main para SEDES*/
+main .main-sedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contenedor-dire {
+  border: 2px solid;
+  width: 75%;
+  justify-self: center;
+}
+main .main-sedes .mapa {
+  width: 80%;
+  height: 90%;
+  padding: 1rem;
+}
+main .pilatessede {
+  width: 70%;
+}
+main .main-sedes iframe {
+  width: 100%;
+  height: 100%;
+}
 
+footer {
+  display: flex;
+  border: 1px solid #65597F;
+  background-color: #E6E6FB;
+  gap: 15px;
+  padding: 10px;
+  justify-content: center;
+}
+footer p {
+  font-size: 10px;
+}
+
+/*logo intstagram*/
+.loginsta {
+  width: 14px;
+}
+
+main .contenedortabla {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 4px;
+  font-size: 16px;
+  justify-content: center;
+}
+main .contenedortabla .tablaimg {
+  width: 100%;
+}
+main .textostabla {
+  text-align: center;
+}
+main table {
+  width: 100%;
+  background-color: #EBEAAE;
+  border-collapse: collapse;
+}
+main table th {
+  color: #65597F;
+  border: solid 1px;
+}
+main table td {
+  color: #65597F;
+  border: solid 1px;
+}
+
+footer {
+  display: flex;
+  border: 1px solid #65597F;
+  background-color: #E6E6FB;
+  gap: 15px;
+  padding: 10px;
+  justify-content: center;
+}
+footer p {
+  font-size: 10px;
+}
+
+/*logo intstagram*/
+.loginsta {
+  width: 14px;
+}
+
+main .contenedorfaqs {
+  display: flex;
+  flex-direction: column;
+}
+main .contenedorfaqs .preguntas1,
+main .contenedorfaqs .preguntas2,
+main .contenedorfaqs .preguntas3,
+main .contenedorfaqs .preguntas4 {
+  border: 2px solid #65597F;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+main p {
+  color: #65597F;
+  font-size: 15px;
+}
+
+/*logo intstagram*/
+.loginsta {
+  width: 14px;
+}
+
+main .formcontacto {
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+}
+main .formcontacto .imgcontacto {
+  display: none;
+}
+main .formcontacto .center-content {
+  text-align: center;
+  padding: 5px;
+}
+main .formcontacto .field {
+  border: solid 1px #ccc;
+  padding: 5px;
+  margin: 5px;
+}
+main input {
+  width: 300px;
+  height: 30px;
+}
+main textarea {
+  width: 300px;
+  height: 30px;
+  height: 80px;
+}
+
+footer footer {
+  display: flex;
+  border: 1px solid #65597F;
+  background-color: #E6E6FB;
+  gap: 15px;
+  padding: 10px;
+  justify-content: center;
+}
+footer footer p {
+  font-size: 10px;
+}
+
+/*logo intstagram*/
+.loginsta {
+  width: 14px;
+}
 
 /* Media query para computadoras de escritorio */
-
-@media (min-width: 1024px) {
-
-
-    body {
-
-        margin: 0 auto;
-    }
-
-
-
-    main .textostabla {
-        padding: 80px;
-        text-align: center;
-    }
-
-
-
-    main .contenedorfaqs {
-
-        
-        justify-content: center;
-    }
-
-    .formcontacto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-
-    }
-
-
-    .form {
-
-        justify-content: center;
-        align-items: center;
-        width: 500px;
-
-    }
-
-    footer p {
-        font-size: 15px;
-    }
-
-
+@media screen and (min-width: 1024px) {
+  main main img {
+    padding: 30px;
+  }
+  main .text-main {
+    padding: 30px;
+  }
+  main .main-sedes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px;
+  }
+  main .contenedor-dire {
+    grid-column: span 2;
+    border: 3px solid;
+    margin-top: 10px;
+  }
+  main .contenedor-dire p {
+    font-size: 20px;
+  }
+  main .main-sedes .mapa {
+    width: 80%;
+    height: 100%;
+  }
+  main .pilatessede {
+    width: 80%;
+    height: 100%;
+  }
+  main main h2 {
+    padding: 25px;
+    font-size: 35px;
+  }
+  main .contenedortabla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto head" "foto texto";
+    margin-top: 10px;
+    height: 550px;
+  }
+  main .contenedortabla .textostabla p {
+    grid-area: texto;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+  main .contenedortabla .tablaimg {
+    width: 90%;
+    grid-area: foto;
+  }
+  main .tabla {
+    grid-area: head;
+    margin-top: 40px;
+  }
+  main .contenedortabla .textostabla {
+    align-items: center;
+  }
+  main .contenedorfaqs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  main .contenedorfaqs .preguntas1,
+  main .contenedorfaqs .preguntas2,
+  main .contenedorfaqs .preguntas3,
+  main .contenedorfaqs .preguntas4 {
+    border: 2px solid #65597F;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+  main .formcontacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+  }
+  main .formcontacto .imgcontacto {
+    display: block;
+    width: 100%;
+  }
+  main .formcontacto .formulario {
+    width: 100%;
+  }
+  main .center-content {
+    text-align: center;
+  }
+  main .field {
+    border: solid 1px #ccc;
+    padding: 20px;
+  }
+  main input, main textarea {
+    width: 300px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  footer p {
+    font-size: 15px;
+  }
 }
+/*logo intstagram*/
+.loginsta {
+  width: 14px;
+}
+
+/* estilos para tablet  */
+@media screen and (min-width: 600px) {
+  main .main-sedes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  main .contenedor-dire {
+    grid-column: span 2;
+    border: 2px solid;
+    width: 35%;
+    justify-self: center;
+  }
+  main .main-sedes .mapa {
+    width: 100%;
+    height: 100%;
+  }
+  main .pilatessede {
+    width: 60%;
+    height: 60%;
+  }
+  main main h2 {
+    font-size: 35px;
+  }
+  main .contenedortabla {
+    padding: 20px;
+    gap: 10px;
+    font-size: 16px;
+    justify-content: center;
+  }
+  main table {
+    width: 100%;
+    background-color: #EBEAAE;
+    border-collapse: collapse;
+  }
+  main table th {
+    color: #65597F;
+    border: solid 1px;
+  }
+  main table td {
+    color: #65597F;
+    border: solid 1px;
+  }
+  main .contenedortabla .tablaimg {
+    width: 90%;
+    margin-left: 35px;
+  }
+  main .textostabla {
+    text-align: center;
+  }
+  main .contenedorfaqs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 800px;
+  }
+  main .contenedorfaqs .preguntas1,
+  main .contenedorfaqs .preguntas2,
+  main .contenedorfaqs .preguntas3,
+  main .contenedorfaqs .preguntas4 {
+    border: 2px solid #65597F;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+  main .formcontacto {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    height: 750px;
+  }
+  main .formcontacto .imgcontacto {
+    display: block;
+    width: 60%;
+  }
+  main .formcontacto .formulario {
+    width: 60%;
+  }
+  footer p {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

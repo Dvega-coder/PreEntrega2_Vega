@@ -1,0 +1,24 @@
+@import "../abstracts/mixin";
+
+main {
+    .contenedorfaqs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedorfaqs {
+
+        .preguntas1,
+        .preguntas2,
+        .preguntas3,
+        .preguntas4 {
+
+            @include preguntas
+        }
+    }
+
+    p {
+        color: $colortipografia;
+        font-size: 15px;
+    }
+}
