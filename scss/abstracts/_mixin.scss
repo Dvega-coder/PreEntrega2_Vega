@@ -9,24 +9,31 @@
     gap: 15px;
     padding: 10px;
     justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    
 
     p {
-        font-size: 10px;
+        margin: 0;
     }
     
  }
 
 /*logo intstagram*/
  .loginsta {
-    width: 14px;
+    width: 20px;
 }
 
 @mixin preguntas {
 
     border: 2px solid #65597F;
-    padding: 5px;
+    padding: 20px;
+    border-radius: 12px;
     margin: 5px;
     text-align: center;
+    margin-bottom: 10px;
+  
+  
 } 
  
 
